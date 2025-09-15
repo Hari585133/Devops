@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Page</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 0; padding: 2rem; background:#f6f8fb; color:#111; }
+    header { display:flex; align-items:center; gap:1rem; }
+    .logo { width:56px; height:56px; border-radius:12px; background:linear-gradient(135deg,#6ee7b7,#60a5fa); display:flex; align-items:center; justify-content:center; color:white; font-weight:700; }
+    main { margin-top:1.5rem; max-width:800px; }
+    .card { background:white; padding:1rem; border-radius:10px; box-shadow:0 6px 18px rgba(20,20,40,0.06); }
+    footer { margin-top:1.25rem; font-size:0.9rem; color:#555; }
+    a.button { display:inline-block; margin-top:0.75rem; padding:0.5rem 0.8rem; border-radius:8px; background:#111827; color:white; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">HP</div>
+    <div>
+      <h1 style="margin:0;font-size:1.25rem">Hello — Simple HTML Starter</h1>
+      <div style="color:#555;font-size:0.95rem">A tiny project to demonstrate Git + GitHub workflow</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>What this page does</h2>
+      <p>This is a minimal, responsive static page you can host on GitHub Pages or any static hosting provider.</p>
+      <ul>
+        <li>Edit <code>index.html</code> to change this content.</li>
+        <li>Push to GitHub and enable GitHub Pages to host it for free.</li>
+      </ul>
+      <a class="button" href="#demo" onclick="document.querySelector('#demo').scrollIntoView();return false">See demo</a>
+    </section>
+
+    <section id="demo" class="card" style="margin-top:1rem">
+      <h3>Interactive Demo</h3>
+      <p>Click the button below to see a JavaScript alert (tiny behavior example):</p>
+      <button onclick="showGreeting()">Click me</button>
+      <script>
+        function showGreeting() {
+          const now = new Date();
+          alert('Hi! Today is ' + now.toLocaleDateString() + '. Enjoy editing this page!');
+        }
+      </script>
+    </section>
+  </main>
+
+  <footer>
+    <div>Built with ♥ — Edit and push to GitHub to publish.</div>
+  </footer>
+</body>
+</html>
